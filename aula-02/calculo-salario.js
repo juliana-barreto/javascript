@@ -2,16 +2,16 @@
 const input = require("readline-sync");
 
 // Entrada de dados
-let grossSalary = input.questionFloat("Salário bruto: R$ ");
-let nightPay = input.questionFloat("Adicional noturno: R$ ");
-let overtimeHours = input.questionInt("Horas extras: ");
-let deductions = input.questionFloat("Descontos: R$ ");
+const grossSalary = input.questionFloat("Salário bruto: R$ ");
+const nightPay = input.questionFloat("Adicional noturno: R$ ");
+const overtimeHours = input.questionInt("Horas extras: ");
+const deductions = input.questionFloat("Descontos: R$ ");
 
 // Cálculo do valor das horas extras (R$ 5,00/hora)
-let overtimePay = overtimeHours * 5;
+const overtimePay = overtimeHours * 5;
 
 // Cálculo do salário líquido
-let netSalary = grossSalary + nightPay + overtimePay - deductions;
+const netSalary = grossSalary + nightPay + overtimePay - deductions;
 
 // Cria um formatador de moeda brasileira
 const fmt = new Intl.NumberFormat('pt-BR', {

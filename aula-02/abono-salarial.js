@@ -3,7 +3,7 @@ const input = require("readline-sync");
 
 // Entrada de dados
 let salary = input.questionFloat("Salário: R$ ");
-let salaryBonus = input.questionFloat("Abono: R$ ");
+const salaryBonus = input.questionFloat("Abono: R$ ");
 
 // Calculo do novo salário
 salary += salaryBonus;
