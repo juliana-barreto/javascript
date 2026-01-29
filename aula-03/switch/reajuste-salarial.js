@@ -38,7 +38,6 @@ switch (position) {
     break
   default:
     console.log("Código de cargo inválido.");
-    return;
 }
 
 console.log(`\nColaborador: ${name}`);

@@ -39,7 +39,6 @@ switch (productID) {
     break;
   default:
     console.log("Produto inválido!");  
-    return;
 }
 
 console.log("Total: ", fmt.format(total));
